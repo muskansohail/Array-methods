@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Methods</title>
+</head>
+
+<body>
+
+
+  <script>
+    const students = ['Hamid', 'Zain', 'Hassan'];
+
+    document.write(students);
+    document.write('<br>');
+
+    students.pop(); //remove an item from last index
+    document.write(students);
+    document.write('<br>');
+
+    students.push('Adil') //add an item from last index
+    document.write(students);
+    document.write('<br>');
+
+    const fruits = ['Zatoon', 'Mango', 'Banana'];
+    const favfruits = ['Grapes', 'Apple'];
+
+
+    let mewfruits = fruits.concat(favfruits); //add two arrays
+
+    document.write(mewfruits)
+    document.write('<br>');
+    document.write(fruits);
+    document.write('<br>');
+
+    document.write(mewfruits.sort()); //sorting array
+
+    document.write('<br>')
+    let ages = [8, 9, 7, 5, 2]
+
+    document.write(ages.sort())
+    document.write('<br>')
+
+
+    const newstudents = ['Hamid', 'Zain', 'Hassan', 'Sheraz', 'Hamza', 'Faizan', 'Mansoor', 'Ibrahim'];
+    // ()=>{}
+
+    // let student_name = newstudents.find((sName) => {
+    //   sName == 'Hamid';
+    // })
+
+    // document.write(student_name)
+    document.write('<br>');
+    newstudents.map(
+      (data) => {
+        document.write(data);
+        document.write('<br>');
+      }
+    )
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>
